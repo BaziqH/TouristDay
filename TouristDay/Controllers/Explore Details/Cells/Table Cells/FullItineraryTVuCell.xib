@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FullItineraryTVuCell" rowHeight="67" id="KGk-i7-Jjw" customClass="FullItineraryTVuCell" customModule="TouristDay" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="364" height="67"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="364" height="67"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UGl-Ue-v4S" customClass="BottomRoundedBorderView" customModule="TouristDay" customModuleProvider="target">
+                        <rect key="frame" x="10" y="0.0" width="344" height="60"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4FF-Qw-EUu" customClass="DesignableView" customModule="TouristDay" customModuleProvider="target">
+                                <rect key="frame" x="18" y="0.0" width="308" height="50"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h7q-0T-qfD">
+                                        <rect key="frame" x="10" y="0.0" width="288" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="View Full Itinerary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FVI-3H-rqZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="273" height="50"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                                <color key="textColor" red="0.12156862745098039" green="0.40000000000000002" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CQM-KT-oLS">
+                                                <rect key="frame" x="273" y="3.3333333333333321" width="15" height="43.333333333333343"/>
+                                                <color key="tintColor" red="0.1215686275" green="0.40000000000000002" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="15" id="n7k-TP-1nz"/>
+                                                </constraints>
+                                                <imageReference key="image" image="chevron.right" catalog="system" symbolScale="small"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.93725490196078431" green="0.96470588235294119" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="h7q-0T-qfD" secondAttribute="trailing" constant="10" id="Gc1-UN-U2h"/>
+                                    <constraint firstItem="h7q-0T-qfD" firstAttribute="top" secondItem="4FF-Qw-EUu" secondAttribute="top" id="P4t-iF-IOr"/>
+                                    <constraint firstAttribute="bottom" secondItem="h7q-0T-qfD" secondAttribute="bottom" id="Xw8-1L-dMs"/>
+                                    <constraint firstItem="h7q-0T-qfD" firstAttribute="leading" secondItem="4FF-Qw-EUu" secondAttribute="leading" constant="10" id="yvr-d7-79Z"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="AllCorner">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4FF-Qw-EUu" firstAttribute="top" secondItem="UGl-Ue-v4S" secondAttribute="top" id="IpG-l1-SZP"/>
+                            <constraint firstItem="4FF-Qw-EUu" firstAttribute="leading" secondItem="UGl-Ue-v4S" secondAttribute="leading" constant="18" id="Rdd-7E-Mfq"/>
+                            <constraint firstAttribute="trailing" secondItem="4FF-Qw-EUu" secondAttribute="trailing" constant="18" id="ZDZ-GS-du5"/>
+                            <constraint firstAttribute="bottom" secondItem="4FF-Qw-EUu" secondAttribute="bottom" constant="10" id="bdr-jS-AXv"/>
+                            <constraint firstAttribute="height" constant="60" id="ryv-oQ-k16"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="bottomCornerRadius">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="0.8778105236" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="UGl-Ue-v4S" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="25i-lt-Pmj"/>
+                    <constraint firstAttribute="bottom" secondItem="UGl-Ue-v4S" secondAttribute="bottom" id="Hz5-nx-Ox1"/>
+                    <constraint firstAttribute="trailing" secondItem="UGl-Ue-v4S" secondAttribute="trailing" constant="10" id="T1q-2t-KJO"/>
+                    <constraint firstItem="UGl-Ue-v4S" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Zmf-4p-k1r"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="102.29007633587786" y="-3.1690140845070425"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="chevron.right" catalog="system" width="97" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

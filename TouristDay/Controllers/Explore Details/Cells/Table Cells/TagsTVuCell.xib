@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TagsTVuCell" rowHeight="75" id="KGk-i7-Jjw" customClass="TagsTVuCell" customModule="TouristDay" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="322" height="75"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="322" height="75"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qyc-OD-4qS" customClass="DesignableView" customModule="TouristDay" customModuleProvider="target">
+                        <rect key="frame" x="10" y="0.0" width="302" height="75"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="sQo-p3-gyo">
+                                <rect key="frame" x="0.0" y="0.0" width="302" height="75"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Pdm-yU-T3k">
+                                        <rect key="frame" x="18" y="8" width="266" height="10"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrowshape.bounce.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Y5A-dT-L9s">
+                                                <rect key="frame" x="0.0" y="1.3333333333333326" width="15" height="7.3333333333333357"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="10" id="a7n-Dz-AQY"/>
+                                                    <constraint firstAttribute="width" constant="15" id="wpn-EQ-MUQ"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Best For" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oBr-ws-R6m">
+                                                <rect key="frame" x="25" y="0.0" width="241" height="10"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="77n-jb-uCc">
+                                        <rect key="frame" x="18" y="26" width="266" height="49"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Ywj-Qa-1ab">
+                                            <size key="itemSize" width="128" height="128"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                    </collectionView>
+                                </subviews>
+                                <edgeInsets key="layoutMargins" top="8" left="18" bottom="0.0" right="18"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.94632653476429629" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sQo-p3-gyo" firstAttribute="leading" secondItem="qyc-OD-4qS" secondAttribute="leading" id="Sus-Cm-SYw"/>
+                            <constraint firstItem="sQo-p3-gyo" firstAttribute="top" secondItem="qyc-OD-4qS" secondAttribute="top" id="fEY-Zg-7dN"/>
+                            <constraint firstAttribute="trailing" secondItem="sQo-p3-gyo" secondAttribute="trailing" id="l9X-lp-wBV"/>
+                            <constraint firstAttribute="bottom" secondItem="sQo-p3-gyo" secondAttribute="bottom" id="x4F-SZ-7hC"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="0.89649651975047828" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="qyc-OD-4qS" secondAttribute="trailing" constant="10" id="N6x-pA-IEk"/>
+                    <constraint firstItem="qyc-OD-4qS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ZOw-9Y-Rgk"/>
+                    <constraint firstAttribute="bottom" secondItem="qyc-OD-4qS" secondAttribute="bottom" id="nNl-QJ-u6K"/>
+                    <constraint firstItem="qyc-OD-4qS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="wTX-fr-QeJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="tagsCollectionView" destination="77n-jb-uCc" id="qKp-UU-zIn"/>
+            </connections>
+            <point key="canvasLocation" x="73.282442748091597" y="-0.35211267605633806"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrowshape.bounce.right" catalog="system" width="128" height="86"/>
+    </resources>
+</document>
