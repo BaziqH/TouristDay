@@ -30,6 +30,19 @@
 		0017FFF62FA1CA6200B687A0 /* TouristDayUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0017FFF32FA1CA6200B687A0 /* TouristDayUITestsLaunchTests.swift */; };
 		0017FFFE2FA1CC1D00B687A0 /* HeaderInfoTVuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0017FFFC2FA1CC1D00B687A0 /* HeaderInfoTVuCell.swift */; };
 		0017FFFF2FA1CC1D00B687A0 /* HeaderInfoTVuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0017FFFD2FA1CC1D00B687A0 /* HeaderInfoTVuCell.xib */; };
+		0098176A2FD7DDEF00645259 /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009817692FD7DDE600645259 /* Storyboards.swift */; };
+		0098176D2FD7DE3E00645259 /* PlanDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0098176C2FD7DE3E00645259 /* PlanDetails.storyboard */; };
+		009817722FD7DEE200645259 /* PlanDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009817712FD7DEE200645259 /* PlanDetailsVC.swift */; };
+		009CD6712FD7E8FB00FE4AE9 /* PlanDetails+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009CD6702FD7E8FB00FE4AE9 /* PlanDetails+TableView.swift */; };
+		009CD67A2FD7EA1200FE4AE9 /* PlanDetailsTVuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 009CD6782FD7EA1200FE4AE9 /* PlanDetailsTVuCell.xib */; };
+		009CD67B2FD7EA1200FE4AE9 /* PlanDetailsTVuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009CD6772FD7EA1200FE4AE9 /* PlanDetailsTVuCell.swift */; };
+		009CD6802FD7EEC400FE4AE9 /* PlanTagsCVuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 009CD67F2FD7EEC400FE4AE9 /* PlanTagsCVuCell.xib */; };
+		009CD6812FD7EEC400FE4AE9 /* PlanTagsCVuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009CD67E2FD7EEC400FE4AE9 /* PlanTagsCVuCell.swift */; };
+		009CD68C2FD8137B00FE4AE9 /* SegmentTVuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 009CD68B2FD8137B00FE4AE9 /* SegmentTVuCell.xib */; };
+		009CD68D2FD8137B00FE4AE9 /* SegmentTVuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009CD68A2FD8137B00FE4AE9 /* SegmentTVuCell.swift */; };
+		009CD6902FD81C8D00FE4AE9 /* PlacesTVuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 009CD68F2FD81C8D00FE4AE9 /* PlacesTVuCell.xib */; };
+		009CD6912FD81C8D00FE4AE9 /* PlacesTVuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009CD68E2FD81C8D00FE4AE9 /* PlacesTVuCell.swift */; };
+		009CD6962FD8439B00FE4AE9 /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009CD6952FD8439B00FE4AE9 /* TabBarVC.swift */; };
 		00A04A962FA202F80020BE1D /* ExploreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A04A922FA202F80020BE1D /* ExploreVC.swift */; };
 		00A04AA22FA203730020BE1D /* OptionsTVuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00A04A9F2FA203730020BE1D /* OptionsTVuCell.xib */; };
 		00A04AA32FA203730020BE1D /* OptionsTVuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A04A9E2FA203730020BE1D /* OptionsTVuCell.swift */; };
@@ -104,6 +117,19 @@
 		0017FFF32FA1CA6200B687A0 /* TouristDayUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouristDayUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0017FFFC2FA1CC1D00B687A0 /* HeaderInfoTVuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderInfoTVuCell.swift; sourceTree = "<group>"; };
 		0017FFFD2FA1CC1D00B687A0 /* HeaderInfoTVuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderInfoTVuCell.xib; sourceTree = "<group>"; };
+		009817692FD7DDE600645259 /* Storyboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
+		0098176C2FD7DE3E00645259 /* PlanDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PlanDetails.storyboard; sourceTree = "<group>"; };
+		009817712FD7DEE200645259 /* PlanDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanDetailsVC.swift; sourceTree = "<group>"; };
+		009CD6702FD7E8FB00FE4AE9 /* PlanDetails+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlanDetails+TableView.swift"; sourceTree = "<group>"; };
+		009CD6772FD7EA1200FE4AE9 /* PlanDetailsTVuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanDetailsTVuCell.swift; sourceTree = "<group>"; };
+		009CD6782FD7EA1200FE4AE9 /* PlanDetailsTVuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlanDetailsTVuCell.xib; sourceTree = "<group>"; };
+		009CD67E2FD7EEC400FE4AE9 /* PlanTagsCVuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanTagsCVuCell.swift; sourceTree = "<group>"; };
+		009CD67F2FD7EEC400FE4AE9 /* PlanTagsCVuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlanTagsCVuCell.xib; sourceTree = "<group>"; };
+		009CD68A2FD8137B00FE4AE9 /* SegmentTVuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentTVuCell.swift; sourceTree = "<group>"; };
+		009CD68B2FD8137B00FE4AE9 /* SegmentTVuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SegmentTVuCell.xib; sourceTree = "<group>"; };
+		009CD68E2FD81C8D00FE4AE9 /* PlacesTVuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesTVuCell.swift; sourceTree = "<group>"; };
+		009CD68F2FD81C8D00FE4AE9 /* PlacesTVuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlacesTVuCell.xib; sourceTree = "<group>"; };
+		009CD6952FD8439B00FE4AE9 /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
 		00A04A922FA202F80020BE1D /* ExploreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreVC.swift; sourceTree = "<group>"; };
 		00A04A9E2FA203730020BE1D /* OptionsTVuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsTVuCell.swift; sourceTree = "<group>"; };
 		00A04A9F2FA203730020BE1D /* OptionsTVuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OptionsTVuCell.xib; sourceTree = "<group>"; };
@@ -212,6 +238,7 @@
 			children = (
 				0017FFCF2FA1CA5A00B687A0 /* Home */,
 				00A04A942FA202F80020BE1D /* Explore */,
+				009CD6952FD8439B00FE4AE9 /* TabBarVC.swift */,
 			);
 			path = "Tab Bar";
 			sourceTree = "<group>";
@@ -220,7 +247,6 @@
 			isa = PBXGroup;
 			children = (
 				0017FFD02FA1CA5A00B687A0 /* Tab Bar */,
-				00C0BD282FA2206300C9A948 /* Explore Details */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -228,6 +254,7 @@
 		0017FFD62FA1CA5A00B687A0 /* Globals */ = {
 			isa = PBXGroup;
 			children = (
+				009817692FD7DDE600645259 /* Storyboards.swift */,
 				00F4B7932FA339A100324741 /* CustomBorderView.swift */,
 				0017FFD32FA1CA5A00B687A0 /* Constants.swift */,
 				0017FFD42FA1CA5A00B687A0 /* DesignableView.swift */,
@@ -249,6 +276,7 @@
 			children = (
 				0017FFD92FA1CA5A00B687A0 /* LaunchScreen.storyboard */,
 				0017FFDB2FA1CA5A00B687A0 /* Main.storyboard */,
+				0098176C2FD7DE3E00645259 /* PlanDetails.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -316,6 +344,47 @@
 			path = "Collection Cells";
 			sourceTree = "<group>";
 		};
+		0098176F2FD7DEB400645259 /* Plan Details */ = {
+			isa = PBXGroup;
+			children = (
+				009817732FD7DF0700645259 /* Cells */,
+				009817712FD7DEE200645259 /* PlanDetailsVC.swift */,
+				009CD6702FD7E8FB00FE4AE9 /* PlanDetails+TableView.swift */,
+			);
+			path = "Plan Details";
+			sourceTree = "<group>";
+		};
+		009817732FD7DF0700645259 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				009CD67D2FD7EE9700FE4AE9 /* CollectionCells */,
+				009CD6792FD7EA1200FE4AE9 /* TableCells */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		009CD6792FD7EA1200FE4AE9 /* TableCells */ = {
+			isa = PBXGroup;
+			children = (
+				009CD6772FD7EA1200FE4AE9 /* PlanDetailsTVuCell.swift */,
+				009CD6782FD7EA1200FE4AE9 /* PlanDetailsTVuCell.xib */,
+				009CD68A2FD8137B00FE4AE9 /* SegmentTVuCell.swift */,
+				009CD68B2FD8137B00FE4AE9 /* SegmentTVuCell.xib */,
+				009CD68E2FD81C8D00FE4AE9 /* PlacesTVuCell.swift */,
+				009CD68F2FD81C8D00FE4AE9 /* PlacesTVuCell.xib */,
+			);
+			path = TableCells;
+			sourceTree = "<group>";
+		};
+		009CD67D2FD7EE9700FE4AE9 /* CollectionCells */ = {
+			isa = PBXGroup;
+			children = (
+				009CD67E2FD7EEC400FE4AE9 /* PlanTagsCVuCell.swift */,
+				009CD67F2FD7EEC400FE4AE9 /* PlanTagsCVuCell.xib */,
+			);
+			path = CollectionCells;
+			sourceTree = "<group>";
+		};
 		00A04A942FA202F80020BE1D /* Explore */ = {
 			isa = PBXGroup;
 			children = (
@@ -323,6 +392,7 @@
 				00A04A922FA202F80020BE1D /* ExploreVC.swift */,
 				00A04AAE2FA20C040020BE1D /* Explore+TableView.swift */,
 				00A04AB52FA215850020BE1D /* Explore+Model.swift */,
+				00C0BD282FA2206300C9A948 /* Explore Details */,
 			);
 			path = Explore;
 			sourceTree = "<group>";
@@ -394,10 +464,11 @@
 		00C0BD282FA2206300C9A948 /* Explore Details */ = {
 			isa = PBXGroup;
 			children = (
-				00B960E52FA3256900C07554 /* ExploreDetail+Models.swift */,
 				00C0BD262FA2206300C9A948 /* Cells */,
 				00C0BD2A2FA2210200C9A948 /* ExploreDetailVC.swift */,
 				00C0BD2C2FA2232300C9A948 /* ExploreDetail+TableView.swift */,
+				00B960E52FA3256900C07554 /* ExploreDetail+Models.swift */,
+				0098176F2FD7DEB400645259 /* Plan Details */,
 			);
 			path = "Explore Details";
 			sourceTree = "<group>";
@@ -527,12 +598,17 @@
 				00D83B662FA22ADA002CAE53 /* NavigationTVuCell.xib in Resources */,
 				00A04AB32FA20C0A0020BE1D /* OptionsCVuCell.xib in Resources */,
 				0017000C2FA1D1F300B687A0 /* LocationsTVuCell.xib in Resources */,
+				0098176D2FD7DE3E00645259 /* PlanDetails.storyboard in Resources */,
+				009CD68C2FD8137B00FE4AE9 /* SegmentTVuCell.xib in Resources */,
 				00B960DC2FA315CD00C07554 /* TagsTVuCell.xib in Resources */,
+				009CD6802FD7EEC400FE4AE9 /* PlanTagsCVuCell.xib in Resources */,
 				00A04AA22FA203730020BE1D /* OptionsTVuCell.xib in Resources */,
 				0017FFEB2FA1CA5A00B687A0 /* LaunchScreen.storyboard in Resources */,
 				001700102FA1D28D00B687A0 /* LocationCVuCell.xib in Resources */,
 				0017FFEC2FA1CA5A00B687A0 /* Main.storyboard in Resources */,
 				00D83B6A2FA23222002CAE53 /* ItineraryDetailsTVuCell.xib in Resources */,
+				009CD6902FD81C8D00FE4AE9 /* PlacesTVuCell.xib in Resources */,
+				009CD67A2FD7EA1200FE4AE9 /* PlanDetailsTVuCell.xib in Resources */,
 				0017FFFF2FA1CC1D00B687A0 /* HeaderInfoTVuCell.xib in Resources */,
 				0017FFED2FA1CA5A00B687A0 /* Assets.xcassets in Resources */,
 				00A04AA62FA2044B0020BE1D /* MainLabelTVuCell.xib in Resources */,
@@ -577,20 +653,28 @@
 				0017FFE72FA1CA5A00B687A0 /* Constants.swift in Sources */,
 				00C0BD2D2FA2232300C9A948 /* ExploreDetail+TableView.swift in Sources */,
 				001700032FA1CE6400B687A0 /* InfoCVuCell.swift in Sources */,
+				009CD6912FD81C8D00FE4AE9 /* PlacesTVuCell.swift in Sources */,
 				0017000F2FA1D28D00B687A0 /* LocationCVuCell.swift in Sources */,
 				00A04AA32FA203730020BE1D /* OptionsTVuCell.swift in Sources */,
+				009CD68D2FD8137B00FE4AE9 /* SegmentTVuCell.swift in Sources */,
+				009CD67B2FD7EA1200FE4AE9 /* PlanDetailsTVuCell.swift in Sources */,
 				00A04AA72FA2044B0020BE1D /* MainLabelTVuCell.swift in Sources */,
 				0017FFE82FA1CA5A00B687A0 /* DesignableView.swift in Sources */,
 				00A04AAF2FA20C040020BE1D /* Explore+TableView.swift in Sources */,
+				0098176A2FD7DDEF00645259 /* Storyboards.swift in Sources */,
+				009CD6812FD7EEC400FE4AE9 /* PlanTagsCVuCell.swift in Sources */,
 				0017FFE92FA1CA5A00B687A0 /* DiagonalDashedView.swift in Sources */,
 				00A04A962FA202F80020BE1D /* ExploreVC.swift in Sources */,
 				00B960DF2FA3175C00C07554 /* TagCVuCell.swift in Sources */,
+				009CD6962FD8439B00FE4AE9 /* TabBarVC.swift in Sources */,
+				009817722FD7DEE200645259 /* PlanDetailsVC.swift in Sources */,
 				00A04AB62FA2158C0020BE1D /* Explore+Model.swift in Sources */,
 				00F4B7942FA339B100324741 /* CustomBorderView.swift in Sources */,
 				00B960E62FA3257500C07554 /* ExploreDetail+Models.swift in Sources */,
 				00D83B692FA23222002CAE53 /* ItineraryDetailsTVuCell.swift in Sources */,
 				001700122FA1DD9B00B687A0 /* Home+TableView.swift in Sources */,
 				00B960DB2FA315CD00C07554 /* TagsTVuCell.swift in Sources */,
+				009CD6712FD7E8FB00FE4AE9 /* PlanDetails+TableView.swift in Sources */,
 				00C0BD2B2FA2210200C9A948 /* ExploreDetailVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

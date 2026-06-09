@@ -42,7 +42,6 @@
         <!--Explore DetailVC-->
         <scene sceneID="BLp-eE-wz5">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sfC-UT-Ra7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="ExploreDetailVC" id="IXS-EK-xdg" customClass="ExploreDetailVC" customModule="TouristDay" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tff-Yc-wlN">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
@@ -67,6 +66,7 @@
                         <outlet property="exploreDetTableView" destination="uwF-tL-Tli" id="Su1-MI-9yg"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sfC-UT-Ra7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1926" y="289"/>
         </scene>
@@ -109,16 +109,17 @@
             </objects>
             <point key="canvasLocation" x="1068" y="-494"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab BarVC-->
         <scene sceneID="Shf-qJ-Wnf">
             <objects>
-                <tabBarController id="dZQ-xf-4gj" sceneMemberID="viewController">
+                <tabBarController id="dZQ-xf-4gj" customClass="TabBarVC" customModule="TouristDay" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="PeX-bk-JqO">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
+                        <outlet property="mainTabBar" destination="PeX-bk-JqO" id="X7D-75-7On"/>
                         <segue destination="F00-GF-BIX" kind="relationship" relationship="viewControllers" id="PvQ-TG-eT8"/>
                         <segue destination="cSM-5G-oOh" kind="relationship" relationship="viewControllers" id="J3P-1e-rDN"/>
                     </connections>

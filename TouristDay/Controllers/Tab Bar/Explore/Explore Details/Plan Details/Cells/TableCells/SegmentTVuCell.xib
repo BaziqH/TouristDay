@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SegmentTVuCell" rowHeight="59" id="KGk-i7-Jjw" customClass="SegmentTVuCell" customModule="TouristDay" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="334" height="59"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="334" height="59"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OgL-az-XJz" customClass="DesignableView" customModule="TouristDay" customModuleProvider="target">
+                        <rect key="frame" x="16" y="8" width="302" height="43"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="bva-Rk-HJ0">
+                                <rect key="frame" x="0.0" y="0.0" width="302" height="43"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mof-G8-Emj">
+                                        <rect key="frame" x="2" y="2" width="147" height="39"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Itinerary" imagePadding="4">
+                                            <imageReference key="image" image="list.bullet" catalog="system" symbolScale="small"/>
+                                            <backgroundConfiguration key="background" cornerRadius="8">
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="14"/>
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="segmentControl:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="HAB-eA-N9E"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ubv-Ei-5BQ">
+                                        <rect key="frame" x="153" y="2" width="147" height="39"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Map" imagePadding="4">
+                                            <imageReference key="image" image="map" catalog="system" symbolScale="small"/>
+                                            <backgroundConfiguration key="background" cornerRadius="8">
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="14"/>
+                                            <color key="baseForegroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="segmentControl:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="3pc-Z8-9p2"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <edgeInsets key="layoutMargins" top="2" left="2" bottom="2" right="2"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93320506810000003" green="0.93384361270000005" blue="0.93712973590000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bva-Rk-HJ0" firstAttribute="top" secondItem="OgL-az-XJz" secondAttribute="top" id="3sG-yJ-2M5"/>
+                            <constraint firstAttribute="bottom" secondItem="bva-Rk-HJ0" secondAttribute="bottom" id="9XP-WC-9Vc"/>
+                            <constraint firstItem="bva-Rk-HJ0" firstAttribute="leading" secondItem="OgL-az-XJz" secondAttribute="leading" id="N5h-3A-15O"/>
+                            <constraint firstAttribute="trailing" secondItem="bva-Rk-HJ0" secondAttribute="trailing" id="qTH-re-2s6"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="AllCorner">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="OgL-az-XJz" secondAttribute="trailing" constant="16" id="3Xy-nG-FxZ"/>
+                    <constraint firstAttribute="bottom" secondItem="OgL-az-XJz" secondAttribute="bottom" constant="8" id="3eB-Ix-qSr"/>
+                    <constraint firstItem="OgL-az-XJz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="TjE-ME-1Nd"/>
+                    <constraint firstItem="OgL-az-XJz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="mNX-j8-Rb9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="segItinerary" destination="mof-G8-Emj" id="6nk-ku-hr2"/>
+                <outlet property="segMap" destination="ubv-Ei-5BQ" id="jxu-qs-Ogl"/>
+            </connections>
+            <point key="canvasLocation" x="-265.64885496183206" y="-3.1690140845070425"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="list.bullet" catalog="system" width="128" height="87"/>
+        <image name="map" catalog="system" width="128" height="112"/>
+    </resources>
+</document>

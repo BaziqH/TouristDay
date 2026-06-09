@@ -43,12 +43,24 @@
                                             </imageView>
                                         </subviews>
                                     </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sQd-Ji-o4h">
+                                        <rect key="frame" x="0.0" y="0.0" width="308" height="50"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain"/>
+                                        <connections>
+                                            <action selector="viewFullItinerary:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Oqe-tq-RUF"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.93725490196078431" green="0.96470588235294119" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="sQd-Ji-o4h" secondAttribute="bottom" id="5zg-ho-RIH"/>
                                     <constraint firstAttribute="trailing" secondItem="h7q-0T-qfD" secondAttribute="trailing" constant="10" id="Gc1-UN-U2h"/>
                                     <constraint firstItem="h7q-0T-qfD" firstAttribute="top" secondItem="4FF-Qw-EUu" secondAttribute="top" id="P4t-iF-IOr"/>
+                                    <constraint firstItem="sQd-Ji-o4h" firstAttribute="top" secondItem="4FF-Qw-EUu" secondAttribute="top" id="QUQ-xZ-KK4"/>
+                                    <constraint firstItem="sQd-Ji-o4h" firstAttribute="leading" secondItem="4FF-Qw-EUu" secondAttribute="leading" id="U6r-Sh-Yuo"/>
                                     <constraint firstAttribute="bottom" secondItem="h7q-0T-qfD" secondAttribute="bottom" id="Xw8-1L-dMs"/>
+                                    <constraint firstAttribute="trailing" secondItem="sQd-Ji-o4h" secondAttribute="trailing" id="bW2-cq-4Ct"/>
                                     <constraint firstItem="h7q-0T-qfD" firstAttribute="leading" secondItem="4FF-Qw-EUu" secondAttribute="leading" constant="10" id="yvr-d7-79Z"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Plan DetailsVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="PlanDetails" id="Y6W-OH-hqX" customClass="PlanDetailsVC" customModule="TouristDay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="82D-nq-veK">
+                                <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <navigationItem title="Foodie Adventure" id="cOZ-Vk-Pul">
+                                        <barButtonItem key="leftBarButtonItem" id="uTs-dF-ge2">
+                                            <view key="customView" contentMode="scaleToFill" id="CuE-yZ-352">
+                                                <rect key="frame" x="16" y="5.6666666666666679" width="87" height="33"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="mob-uS-l5z">
+                                                        <rect key="frame" x="0.0" y="0.0" width="87" height="33"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9xw-AX-47I">
+                                                                <rect key="frame" x="0.0" y="0.0" width="48.666666666666664" height="33"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                                <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="-4" maxY="0.0"/>
+                                                                <state key="normal" title="Back">
+                                                                    <color key="titleColor" name="AccentColor"/>
+                                                                    <imageReference key="image" image="chevron.left" catalog="system" symbolScale="small" variableValue="5.5511151231257827e-17"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="goBack:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="9jq-s2-F3x"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="mob-uS-l5z" firstAttribute="top" secondItem="CuE-yZ-352" secondAttribute="top" id="aMA-D7-tpJ"/>
+                                                    <constraint firstAttribute="bottom" secondItem="mob-uS-l5z" secondAttribute="bottom" id="cPU-26-V7l"/>
+                                                    <constraint firstAttribute="trailing" secondItem="mob-uS-l5z" secondAttribute="trailing" id="ozs-UA-pVw"/>
+                                                    <constraint firstItem="mob-uS-l5z" firstAttribute="leading" secondItem="CuE-yZ-352" secondAttribute="leading" id="v9F-Tw-Ntm"/>
+                                                </constraints>
+                                            </view>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" id="w2C-1I-Sdc">
+                                            <view key="customView" contentMode="scaleToFill" id="Ze6-ko-Iur">
+                                                <rect key="frame" x="290" y="5.6666666666666679" width="87" height="33"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="hnh-Nt-ht5">
+                                                        <rect key="frame" x="0.0" y="0.0" width="87" height="33"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cDw-bu-keE">
+                                                                <rect key="frame" x="40" y="0.0" width="47" height="33"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="Adopt"/>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="hnh-Nt-ht5" secondAttribute="bottom" id="SRp-Ty-jqO"/>
+                                                    <constraint firstAttribute="trailing" secondItem="hnh-Nt-ht5" secondAttribute="trailing" id="Y1D-9p-GWd"/>
+                                                    <constraint firstItem="hnh-Nt-ht5" firstAttribute="top" secondItem="Ze6-ko-Iur" secondAttribute="top" id="bgl-6j-lLE"/>
+                                                    <constraint firstItem="hnh-Nt-ht5" firstAttribute="leading" secondItem="Ze6-ko-Iur" secondAttribute="leading" id="hzP-n8-b6S"/>
+                                                </constraints>
+                                            </view>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                                <navigationBarAppearance key="standardAppearance">
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </navigationBarAppearance>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="1bL-MC-8YU">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="82D-nq-veK" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="2X8-xg-auW"/>
+                            <constraint firstItem="1bL-MC-8YU" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="9V7-s3-ZmN"/>
+                            <constraint firstItem="82D-nq-veK" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="FsX-fs-ySa"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="1bL-MC-8YU" secondAttribute="bottom" id="S8d-tW-EfX"/>
+                            <constraint firstItem="1bL-MC-8YU" firstAttribute="top" secondItem="82D-nq-veK" secondAttribute="bottom" id="dx3-eE-JoA"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="82D-nq-veK" secondAttribute="trailing" id="j69-uc-3dy"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="1bL-MC-8YU" secondAttribute="trailing" id="wPK-AJ-cRk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="planDetailsTVu" destination="1bL-MC-8YU" id="ai1-PH-pCQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="91" y="-34"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chevron.left" catalog="system" width="97" height="128"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

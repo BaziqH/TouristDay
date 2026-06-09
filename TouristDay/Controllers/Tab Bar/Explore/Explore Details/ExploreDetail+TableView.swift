@@ -74,6 +74,11 @@ extension ExploreDetailVC{
         guard let cell = exploreDetTableView.dequeueReusableCell(withIdentifier: "FullItineraryTVuCell", for: indexPath) as? FullItineraryTVuCell else {
             return FullItineraryTVuCell()
         }
+        cell.viewItinerary = {[weak self] in
+            if let vc = Plan_Details_Storyboard.instantiateViewController(withIdentifier: "PlanDetails") as? PlanDetailsVC {
+                self?.navigationController?.pushViewController(vc, animated: true)
+            }
+        }
         return cell
     }
 }
