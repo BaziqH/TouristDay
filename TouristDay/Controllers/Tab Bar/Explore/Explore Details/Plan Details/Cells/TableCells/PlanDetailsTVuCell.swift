@@ -20,7 +20,6 @@ class PlanDetailsTVuCell: UITableViewCell {
     }
     override func layoutSubviews() {
         //MARK: - VARIABLES
-        // private var didLayout = false
         super.layoutSubviews()
         if !didLayout {
             didLayout = true

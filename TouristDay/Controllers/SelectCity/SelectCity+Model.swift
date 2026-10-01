@@ -1,6 +1,8 @@
 /********** Developed by Drudots Technology **********/
 /******** https://www.drudotstech.com **********/
 
-@_exported import UIKit
-@_exported import CoreData
+struct PopularCity{
+    var city: String
+    var country: String
+}
 

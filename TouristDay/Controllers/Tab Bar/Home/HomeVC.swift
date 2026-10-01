@@ -11,5 +11,8 @@ class HomeVC: UIViewController {
         setupTableView()
         registerNibs()
     }
-
+    @IBAction func goBackToSelectCity(_ sender: Any) {
+        self.dismiss(animated: false)
+    }
+    
 }

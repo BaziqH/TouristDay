@@ -213,7 +213,7 @@
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Bki-1Z-hoM">
                                                                 <rect key="frame" x="49.666666666666657" y="0.0" width="288.33333333333337" height="12"/>
                                                                 <subviews>
-                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dot.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="D7p-b1-CCI">
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smallcircle.filled.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="D7p-b1-CCI">
                                                                         <rect key="frame" x="0.0" y="0.66666666666666607" width="12" height="10.666666666666668"/>
                                                                         <color key="tintColor" red="0.20392156859999999" green="0.56946306479999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <constraints>
@@ -335,11 +335,11 @@
     </objects>
     <resources>
         <image name="clock" catalog="system" width="128" height="123"/>
-        <image name="dot.circle" catalog="system" width="128" height="123"/>
         <image name="ic_bulb" width="145.5" height="217"/>
         <image name="img_tower" width="259" height="194"/>
         <image name="mappin.circle" catalog="system" width="128" height="123"/>
         <image name="phone" catalog="system" width="128" height="115"/>
+        <image name="smallcircle.filled.circle" catalog="system" width="128" height="123"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
