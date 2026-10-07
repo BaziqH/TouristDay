@@ -17,7 +17,9 @@ extension SelectCityVC: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print(currentCities[indexPath.row])
-        navigateToHome()
+        let selectedCity = currentCities[indexPath.row].city
+        let selectedCountry = currentCities[indexPath.row].country
+        navigateToHome(selectedCity: selectedCity, selectedCountry: selectedCountry)
     }
 }
 //MARK: - LOAD CELLS

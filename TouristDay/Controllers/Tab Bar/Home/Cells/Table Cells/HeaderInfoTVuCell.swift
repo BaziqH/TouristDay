@@ -6,17 +6,31 @@
 class HeaderInfoTVuCell: UITableViewCell {
 //MARK: - OUTLETS
     @IBOutlet weak var infoCollectionView: UICollectionView!
+    @IBOutlet weak var citySelectBtn: UIButton!
+    
+    var selectCity: (()->Void)?
     override func awakeFromNib() {
         super.awakeFromNib()
         setupCollectionView()
         registerNibs()
         // Initialization code
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    // MARK: - CONFIGURE
+    func configure(selectedCity: String){
+        var config = citySelectBtn.configuration
+        config?.title = selectedCity
+        config?.titleTextAttributesTransformer = UIConfigurationTextAttributesTransformer { incomingAttributes in
+            var outgoingAttributes = incomingAttributes
+            let existingFont = self.citySelectBtn.titleLabel?.font ?? UIFont(name: "HelveticaNeue", size: 16)
+            outgoingAttributes.font = existingFont
+            return outgoingAttributes
+        }
+        citySelectBtn.configuration = config
+    }
+    
+    //MARK: - ACTIONS
+    @IBAction func citySelectBtnClicked(_ sender: Any) {
+        selectCity?()
     }
 }
 //MARK: - COLLECTION VIEW

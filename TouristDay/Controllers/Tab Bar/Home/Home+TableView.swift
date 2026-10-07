@@ -30,6 +30,11 @@ extension HomeVC{
         guard let cell = homeTableView.dequeueReusableCell(withIdentifier: "HeaderInfoTVuCell", for: indexPath) as? HeaderInfoTVuCell else {
             return HeaderInfoTVuCell()
         }
+        cell.configure(selectedCity: selectedCity ?? "")
+        
+        cell.selectCity = {[weak self] in
+            self?.navigationController?.dismiss(animated: false)
+        }
         return cell
     }
     func loadMapTVuCell(_ indexPath: IndexPath)->UITableViewCell{
