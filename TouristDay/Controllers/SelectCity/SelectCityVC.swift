@@ -31,6 +31,7 @@ class SelectCityVC: UIViewController {
         registerNibs()
         setupSearchBar()
         fillData()
+        dismissKeyboardOnTap()
     }
 }
 //MARK: - FETCH DATA FROM API

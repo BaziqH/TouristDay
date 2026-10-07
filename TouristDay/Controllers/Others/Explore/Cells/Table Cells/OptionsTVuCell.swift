@@ -78,32 +78,32 @@ extension OptionsTVuCell{
     func fillData(){
         optionsData = [
             OptionsDTO(iconImg: UIImage(systemName: "fork.knife") ?? UIImage(),
-                       iconBackColor: UIColor.blue.withAlphaComponent(0.3),
+                       iconBackColor: UIColor.blue.withAlphaComponent(0.4),
                        optionLabel: "Food Experience",
                        optionDesc: "Restaurants, markets & other culinary delights"),
             
             OptionsDTO(iconImg: UIImage(systemName: "theatermasks.fill") ?? UIImage(),
-                       iconBackColor: UIColor.purple.withAlphaComponent(0.3),
+                       iconBackColor: UIColor.purple.withAlphaComponent(0.4),
                        optionLabel: "Culture & Arts",
                        optionDesc: "Museums, galleries, and local performances"),
             
             OptionsDTO(iconImg: UIImage(systemName: "airplane") ?? UIImage(),
-                       iconBackColor: UIColor.orange.withAlphaComponent(0.3),
+                       iconBackColor: UIColor.orange.withAlphaComponent(0.4),
                        optionLabel: "Travel & Leisure",
                        optionDesc: "Flights, hotels, and sightseeing tours"),
             
             OptionsDTO(iconImg: UIImage(systemName: "figure.hiking") ?? UIImage(),
-                       iconBackColor: UIColor.green.withAlphaComponent(0.3),
+                       iconBackColor: UIColor.green.withAlphaComponent(0.4),
                        optionLabel: "Nature & Outdoors",
                        optionDesc: "Hiking trails, parks, and scenic views"),
             
             OptionsDTO(iconImg: UIImage(systemName: "cart.fill") ?? UIImage(),
-                       iconBackColor: UIColor.systemPink.withAlphaComponent(0.3),
+                       iconBackColor: UIColor.systemPink.withAlphaComponent(0.4),
                        optionLabel: "Shopping",
                        optionDesc: "Boutiques, malls, and local craft markets"),
             
             OptionsDTO(iconImg: UIImage(systemName: "film.fill") ?? UIImage(),
-                       iconBackColor: UIColor.systemRed.withAlphaComponent(0.3),
+                       iconBackColor: UIColor.systemRed.withAlphaComponent(0.4),
                        optionLabel: "Cinema",
                        optionDesc: "Latest blockbusters, indie films & theaters")
         ]

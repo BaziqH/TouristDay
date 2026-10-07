@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24504"/>
         <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -21,20 +22,20 @@
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="4oM-xu-m3w">
                         <rect key="frame" x="0.0" y="0.0" width="376" height="273"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XJd-ys-qIF">
-                                <rect key="frame" x="0.0" y="0.0" width="376" height="54.333333333333336"/>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XJd-ys-qIF">
+                                <rect key="frame" x="0.0" y="-6" width="376" height="6"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="JcL-jQ-dW8">
-                                        <rect key="frame" x="10" y="0.0" width="356" height="54.333333333333336"/>
+                                        <rect key="frame" x="10" y="0.0" width="356" height="6"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Explore" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="51R-pf-kVB">
-                                                <rect key="frame" x="0.0" y="0.0" width="356" height="31.333333333333332"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="356" height="0.0"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PIh-wU-u0C">
-                                                <rect key="frame" x="0.0" y="37.333333333333336" width="356" height="17"/>
+                                                <rect key="frame" x="0.0" y="6" width="356" height="0.0"/>
                                                 <string key="text">Discover curated plans for yor day
 </string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -53,16 +54,16 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="EXS-hD-HuY">
-                                <rect key="frame" x="0.0" y="69.333333333333329" width="376" height="203.66666666666669"/>
+                                <rect key="frame" x="0.0" y="0.0" width="376" height="273"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jLF-cs-kFS" customClass="DesignableView" customModule="TouristDay" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="376" height="95.333333333333329"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="376" height="164.66666666666666"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="gBZ-4B-MBM">
-                                                <rect key="frame" x="10" y="10" width="356" height="75.333333333333329"/>
+                                                <rect key="frame" x="10" y="10" width="356" height="144.66666666666666"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Np-Fa-KtW" customClass="DesignableView" customModule="TouristDay" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="17.666666666666671" width="40" height="40"/>
+                                                        <rect key="frame" x="0.0" y="52.333333333333343" width="40" height="40"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Icv-SC-TGk">
                                                                 <rect key="frame" x="0.0" y="1.6666666666666643" width="40" height="36.000000000000007"/>
@@ -91,7 +92,7 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="KGr-sV-avc">
-                                                        <rect key="frame" x="46" y="20.000000000000004" width="310" height="35.333333333333343"/>
+                                                        <rect key="frame" x="46" y="54.666666666666671" width="310" height="35.333333333333329"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AI-Curated Itineraries" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fZB-ct-Cp9">
                                                                 <rect key="frame" x="0.0" y="0.0" width="310" height="17"/>
@@ -128,7 +129,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" verticalHuggingPriority="249" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="cQW-8k-BQ0">
-                                        <rect key="frame" x="0.0" y="95.333333333333343" width="376" height="108.33333333333334"/>
+                                        <rect key="frame" x="0.0" y="164.66666666666666" width="376" height="108.33333333333334"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Tor-Hu-5Qr">
                                                 <rect key="frame" x="0.0" y="20.000000000000004" width="376" height="58.333333333333343"/>
@@ -153,7 +154,7 @@
                                                 </subviews>
                                             </stackView>
                                         </subviews>
-                                        <color key="backgroundColor" white="0.8972468992479804" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" name="Color#DEDEDE"/>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="Tor-Hu-5Qr" secondAttribute="bottom" constant="30" id="LHF-nz-IWs"/>
                                             <constraint firstItem="Tor-Hu-5Qr" firstAttribute="top" secondItem="cQW-8k-BQ0" secondAttribute="top" constant="20" id="jgo-Hy-rZo"/>
@@ -182,6 +183,9 @@
     </objects>
     <resources>
         <image name="star" catalog="system" width="128" height="116"/>
+        <namedColor name="Color#DEDEDE">
+            <color red="0.87058823529411766" green="0.87058823529411766" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

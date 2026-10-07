@@ -29,10 +29,10 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="mob-uS-l5z">
-                                                        <rect key="frame" x="0.0" y="0.0" width="87" height="33"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="87" height="33.333333333333336"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9xw-AX-47I">
-                                                                <rect key="frame" x="0.0" y="0.0" width="48.666666666666664" height="33"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="48.666666666666664" height="33.333333333333336"/>
                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                                                 <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="-4" maxY="0.0"/>
                                                                 <state key="normal" title="Back">
@@ -60,13 +60,16 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="hnh-Nt-ht5">
-                                                        <rect key="frame" x="0.0" y="0.0" width="87" height="33"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="87" height="33.333333333333336"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cDw-bu-keE">
-                                                                <rect key="frame" x="40" y="0.0" width="47" height="33"/>
+                                                                <rect key="frame" x="40" y="0.0" width="47" height="33.333333333333336"/>
                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                 <state key="normal" title="Adopt"/>
+                                                                <connections>
+                                                                    <action selector="adoptPlan:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="0bg-lN-ldR"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -86,7 +89,7 @@
                                 </navigationBarAppearance>
                             </navigationBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="1bL-MC-8YU">
-                                <rect key="frame" x="0.0" y="172" width="393" height="612"/>
+                                <rect key="frame" x="0.0" y="172" width="393" height="680"/>
                                 <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tableView>
                         </subviews>
@@ -96,7 +99,7 @@
                             <constraint firstItem="82D-nq-veK" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="2X8-xg-auW"/>
                             <constraint firstItem="1bL-MC-8YU" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="9V7-s3-ZmN"/>
                             <constraint firstItem="82D-nq-veK" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="FsX-fs-ySa"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="1bL-MC-8YU" secondAttribute="bottom" id="S8d-tW-EfX"/>
+                            <constraint firstAttribute="bottom" secondItem="1bL-MC-8YU" secondAttribute="bottom" id="S8d-tW-EfX"/>
                             <constraint firstItem="1bL-MC-8YU" firstAttribute="top" secondItem="82D-nq-veK" secondAttribute="bottom" id="dx3-eE-JoA"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="82D-nq-veK" secondAttribute="trailing" id="j69-uc-3dy"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="1bL-MC-8YU" secondAttribute="trailing" id="wPK-AJ-cRk"/>

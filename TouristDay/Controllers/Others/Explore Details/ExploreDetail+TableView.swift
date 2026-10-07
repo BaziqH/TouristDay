@@ -75,7 +75,7 @@ extension ExploreDetailVC{
             return FullItineraryTVuCell()
         }
         cell.viewItinerary = {[weak self] in
-            if let vc = Plan_Details_Storyboard.instantiateViewController(withIdentifier: "PlanDetails") as? PlanDetailsVC {
+            if let vc = Storyboards.Plan_Details_Storyboard.instantiateViewController(withIdentifier: "PlanDetails") as? PlanDetailsVC {
                 self?.navigationController?.pushViewController(vc, animated: true)
             }
         }

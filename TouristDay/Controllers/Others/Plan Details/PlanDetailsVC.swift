@@ -17,4 +17,7 @@ class PlanDetailsVC: UIViewController {
     @IBAction func goBack(_ sender: Any) {
         navigationController?.popViewController(animated: true)
     }
+    @IBAction func adoptPlan(_ sender: UIButton) {
+        navigateToHome(selectedCity: "Lahore", selectedCountry: "Pakistan")
+    }
 }

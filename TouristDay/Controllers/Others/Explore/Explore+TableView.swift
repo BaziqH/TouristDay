@@ -34,11 +34,14 @@ extension ExploreVC{
             return OptionsTVuCell()
         }
         cell.onTap = { [weak self] in
-            if let detailsVC = self?.storyboard?.instantiateViewController(withIdentifier: "ExploreDetailVC") as? ExploreDetailVC {
-                
-                // Push ensures the Tab Bar stays visible
-                self?.navigationController?.pushViewController(detailsVC, animated: false)
-            }
+//            if let detailsVC = self?.storyboard?.instantiateViewController(withIdentifier: "ExploreDetailVC") as? ExploreDetailVC {
+//                
+//                // Push ensures the Tab Bar stays visible
+//                self?.navigationController?.pushViewController(detailsVC, animated: false)
+//            }
+            
+            self?.exploreTableView.isHidden = true
+            self?.budgetView.isHidden = false
         }
         return cell
     }
