@@ -18,8 +18,8 @@ extension SelectCityVC: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print(currentCities[indexPath.row])
         searchBar.resignFirstResponder()
-        let selectedCity = currentCities[indexPath.row].city
-        let selectedCountry = currentCities[indexPath.row].country
+        selectedCity.city = currentCities[indexPath.row].city
+        selectedCity.country = currentCities[indexPath.row].country
         openExploreSheet()
     }
 }

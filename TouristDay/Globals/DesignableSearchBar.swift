@@ -1,9 +1,11 @@
 /********** Developed by Drudots Technology **********/
 /******** https://www.drudotstech.com **********/
 
+import UIKit
+
 @IBDesignable
 class DesignableSearchBar: UISearchBar {
-
+    
     @IBInspectable var barHeight: CGFloat = 56 {
         didSet {
             invalidateIntrinsicContentSize()
@@ -86,6 +88,9 @@ class DesignableSearchBar: UISearchBar {
     override func awakeFromNib() {
         super.awakeFromNib()
         invalidateIntrinsicContentSize()
+        applyStyles()
+        applyTextFieldConstraints()
+        applyIconSizeConstraints()
     }
 
     override var intrinsicContentSize: CGSize {
@@ -106,11 +111,20 @@ class DesignableSearchBar: UISearchBar {
         guard let textField = searchTextField as UISearchTextField? else { return }
 
         textField.translatesAutoresizingMaskIntoConstraints = false
+        
+        // 🌟 FIX: Explicitly pinned top and bottom anchors with a lower priority.
+        // This breaks any constraint collisions with private system container views.
+        let topConstraint = textField.topAnchor.constraint(equalTo: topAnchor)
+        let bottomConstraint = textField.bottomAnchor.constraint(equalTo: bottomAnchor)
+        topConstraint.priority = UILayoutPriority(999)
+        bottomConstraint.priority = UILayoutPriority(999)
+
         NSLayoutConstraint.activate([
             textField.heightAnchor.constraint(equalToConstant: barHeight),
             textField.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 0),
             textField.trailingAnchor.constraint(equalTo: trailingAnchor, constant: 0),
-            textField.centerYAnchor.constraint(equalTo: centerYAnchor)
+            topConstraint,
+            bottomConstraint
         ])
 
         heightConstraintApplied = true
@@ -137,14 +151,15 @@ class DesignableSearchBar: UISearchBar {
 
     private func applyStyles() {
         backgroundImage = UIImage()
+        searchBarStyle = .minimal
         backgroundColor = barColor
 
         guard let textField = searchTextField as UISearchTextField? else { return }
 
         textField.backgroundColor = textFieldBackgroundColor
+        textField.tintColor = searchIconColor
 
-        // borderStyle = .roundedRect (default) pulls in _UISearchBarSearchFieldBackgroundView
-        // with its own grey fill — .none removes it so our colors apply correctly
+        // borderStyle = .none removes private system background drawing subviews
         textField.borderStyle = .none
 
         textField.layer.cornerRadius = textFieldCornerRadius
@@ -157,19 +172,19 @@ class DesignableSearchBar: UISearchBar {
         if let placeholder = textField.placeholder {
             textField.attributedPlaceholder = NSAttributedString(
                 string: placeholder,
-                attributes: [.foregroundColor: placeholderColor]
+                attributes: [
+                    .foregroundColor: placeholderColor,
+                    .font: textField.font ?? UIFont.systemFont(ofSize: 16)
+                ]
             )
         }
 
         if let glassIcon = textField.leftView as? UIImageView {
+            glassIcon.image = glassIcon.image?.withRenderingMode(.alwaysTemplate)
             glassIcon.tintColor = searchIconColor
         }
-        if let clearButton = textField.value(forKey: "clearButton") as? UIButton {
-            let image = clearButton.imageView?.image?.withRenderingMode(.alwaysTemplate)
-            clearButton.setImage(image, for: .normal)
-            clearButton.tintColor = searchIconColor
-        }
-
+        let clearButtonProxy = UIButton.appearance(whenContainedInInstancesOf: [UISearchBar.self])
+                clearButtonProxy.tintColor = searchIconColor
         showsBookmarkButton = showMicrophone
     }
 }

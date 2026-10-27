@@ -17,6 +17,8 @@ class SelectCityVC: UIViewController {
     //MARK: - ARRAYS
     var popularCities: [PopularCity] = []
     var currentCities: [PopularCity] = []
+    var selectedCity = PopularCity(city: "", country: "")
+    var planService = PlanService()
     
     //MARK: - OUTLETS
     @IBOutlet weak var popularCityTVu: UITableView!
@@ -32,6 +34,7 @@ class SelectCityVC: UIViewController {
         setupSearchBar()
         fillData()
         dismissKeyboardOnTap()
+        
     }
 }
 //MARK: - FETCH DATA FROM API

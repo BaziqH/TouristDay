@@ -3,4 +3,4 @@
 
 @_exported import UIKit
 @_exported import CoreData
-
+@_exported import MapKit

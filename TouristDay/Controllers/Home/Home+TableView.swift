@@ -38,8 +38,8 @@ extension HomeVC{
         return cell
     }
     func loadMapTVuCell(_ indexPath: IndexPath)->UITableViewCell{
-        guard let cell = homeTableView.dequeueReusableCell(withIdentifier: "MapTVuCell", for: indexPath) as? MapTVuCell else {
-            return MapTVuCell()
+        guard let cell = homeTableView.dequeueReusableCell(withIdentifier: "MapRouteTVuCell", for: indexPath) as? MapRouteTVuCell else {
+            return MapRouteTVuCell()
         }
         return cell
     }
@@ -65,8 +65,8 @@ extension HomeVC{
         let headerNib = UINib(nibName: "HeaderInfoTVuCell", bundle: nil)
         homeTableView.register(headerNib, forCellReuseIdentifier: "HeaderInfoTVuCell")
 
-        let mapNib = UINib(nibName: "MapTVuCell", bundle: nil)
-        homeTableView.register(mapNib, forCellReuseIdentifier: "MapTVuCell")
+        let mapNib = UINib(nibName: "MapRouteTVuCell", bundle: nil)
+        homeTableView.register(mapNib, forCellReuseIdentifier: "MapRouteTVuCell")
         
         let locationsNib = UINib(nibName: "LocationsTVuCell", bundle: nil)
         homeTableView.register(locationsNib, forCellReuseIdentifier: "LocationsTVuCell")

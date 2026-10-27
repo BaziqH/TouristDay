@@ -24,9 +24,4 @@ class HomeVC: UIViewController {
             self.navigationController?.setViewControllers(filteredStack, animated: false)
         }
     }
-    @IBAction func goBackToSelectCity(_ sender: Any) {
-        self.dismiss(animated: false)
-//        navigationController?.popViewController(animated: true)
-    }
-    
 }
